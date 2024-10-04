@@ -1,0 +1,115 @@
+/* Background color and homepage container*/
+
+.home-background {
+  background: linear-gradient(to bottom right, #1e2022 42%, #5b80b3 100%);
+  height: 100vh; /* Covers full viewport height */
+}
+
+body {
+  padding: 30px 70px;
+}
+
+.header {
+  padding: 30px 70px;
+}
+
+.container {
+  background-color: #9ba4b5;
+  border: 3px solid black;
+  border-radius: 12px;
+  padding: 10px 250px;
+  display: flex;
+  font-size: 18px;
+  font-family: "Times New Roman", Times, serif;
+  justify-content: center;
+  margin: -35px auto 0; /* Use a negative top margin to move it up */
+  max-width: 5000px;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-list {
+  list-style-type: none; /* Remove bullet points */
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.navbar-item {
+  font-weight: bold;
+  display: inline-flex;
+  align-items: center;
+  margin-right: 50px;
+}
+
+.logo-container {
+  display: inline-block;
+  background-color: #c9b0e5;
+  padding: 10px 20px;
+  min-width: 100px; /* Minimum width for the box */
+  border-radius: none;
+  margin-bottom: 0;
+  margin-right: 400px;
+  border: 3px solid black;
+}
+
+.logo {
+  color: #000000;
+  font-size: 24px;
+  line-height: 1; /* Ensures it aligns with the nav items */
+}
+
+.navbar-link {
+  color: rgba(0, 0, 0, 0.7); /* reduces opacity */
+  text-decoration: none;
+}
+
+/* Author's name and a short description*/
+
+.author-section {
+  padding: 50px;
+}
+
+.author-name {
+  color: #9ba4b5;
+  font-size: 60px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  /* Playfair Display Font */
+}
+
+.section-text {
+  color: #ffffff;
+  margin-top: 40px;
+  line-height: 1.5;
+  font-size: 16px;
+  text-align: left;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+/*Learn more button*/
+
+.learn-more-button {
+  margin-top: 40px;
+  margin-bottom: 20px;
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #c9b0e5;
+  color: #000000;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.learn-more-button:hover {
+  background-color: #5b80b3;
+}
+
+/* Author's Picture*/

@@ -1,0 +1,434 @@
+/* 1.HOMEPAGE*/
+
+.home-background {
+  background: linear-gradient(to bottom right, #1e2022 42%, #5b80b3 100%);
+  height: 100vh;
+}
+
+body {
+  padding: 30px 70px;
+}
+
+.header {
+  padding: 30px 70px;
+}
+
+.container {
+  background-color: #9ba4b5;
+  border: 3px solid black;
+  border-radius: 12px;
+  padding: 10px 250px;
+  display: flex;
+  font-size: 18px;
+  font-family: "Times New Roman", Times, serif;
+  justify-content: center;
+  margin: -35px auto 0; /* Use a negative top margin to move it up */
+  max-width: 5000px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #9ba4b5;
+  z-index: 1000;
+  padding: 10px 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  height: 60px;
+}
+
+.navbar-list {
+  list-style-type: none; /* Remove bullet points */
+  padding: 0;
+  margin-left: auto;
+  display: flex;
+}
+
+.navbar-item {
+  font-weight: bold;
+  display: inline-flex;
+  align-items: center;
+  margin-right: 100px;
+}
+
+.navbar-link {
+  color: rgba(0, 0, 0, 0.7);
+  text-decoration: none;
+  transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.navbar-link:hover {
+  color: rgba(255, 0, 0, 0.8);
+  transform: translateY(-5px);
+}
+
+.logo-container {
+  flex: 1;
+  display: inline-block;
+  background-color: #c9b0e5;
+  padding: 10px 20px;
+  min-width: 100px; /* Minimum width for the box */
+  border-radius: none;
+  margin-bottom: 0;
+  margin-right: 500px;
+  border: 3px solid black;
+}
+
+.logo {
+  color: #000000;
+  font-size: 24px;
+  line-height: 1; /* Ensures it aligns with the nav items */
+}
+
+/* Author's name and a short description*/
+
+.author-section {
+  padding: 115px;
+}
+
+.author-name {
+  color: #9ba4b5;
+  font-size: 65px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  /* Playfair Display Font */
+}
+
+.section-text {
+  color: #ffffff;
+  margin-top: 40px;
+  line-height: 1.5;
+  font-size: 16.5px;
+  text-align: left;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+/*Learn more button*/
+
+.learn-more-button {
+  margin-top: 45px;
+  margin-bottom: 20px;
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #c9b0e5;
+  color: #000000;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.learn-more-button:hover {
+  background-color: #5b80b3;
+}
+
+/* Author Image */
+.author-section {
+  display: flex;
+  align-items: flex-start;
+  margin-top: 20px;
+  position: relative;
+}
+
+.authors-content {
+  max-width: 60%;
+}
+
+.stephen-image {
+  margin-left: 200px;
+  flex-shrink: 0;
+  position: relative;
+  z-index: 2;
+  margin-top: 50px;
+}
+
+.stephen-image img {
+  width: 350px;
+  height: auto;
+  border-radius: 0px;
+}
+
+.rectangle {
+  position: absolute;
+  width: 375px;
+  height: 475px;
+  left: 1200px;
+  top: 65px;
+  background: linear-gradient(180deg, #9ba4b5 0%, #44484f 100%);
+  z-index: 1;
+  transform: translateX(-150px);
+  border: 5px solid white;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+/* I wanna add some animation*/
+
+/* 2.ABOUT PAGE*/
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth; /* Enables smooth scrolling */
+}
+
+.about-background {
+  background: #ffffff;
+  height: 100vh;
+}
+
+.the-author {
+  color: #5176a9;
+  padding: 35px 118px;
+  font-weight: bold;
+  font-size: 24px;
+  font-style: italic;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  /* Playfair Display Font */
+}
+
+.author-image {
+  padding: 0% 118px;
+  float: left;
+  margin-right: 10px;
+  margin-top: -20px;
+  flex-shrink: 0;
+}
+
+.author-image img {
+  width: 400px;
+  height: 525px;
+}
+
+.quote-1 {
+  text-align: left;
+  margin-left: 0;
+  padding: 0 100px;
+  line-height: 1.5;
+  font-size: 24px;
+  color: #a16ddc;
+  margin-bottom: 15px;
+  margin-top: -30px; /* Adds negative margin to pull it up */
+  font-style: inherit;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+.para-1 {
+  text-align: justify;
+  margin-left: 0;
+  margin-right: 0;
+  line-height: 1.8;
+  font-size: 18px;
+  margin-bottom: 15px;
+  margin-top: -10px; /* Adds negative margin to pull it up */
+  font-family: "Spectral", serif;
+  opacity: 0.8;
+}
+
+.quote-2 {
+  text-align: left;
+  margin-left: 0;
+  margin-top: 35px;
+  margin-bottom: 5px;
+  font-size: 24px;
+  line-height: 1.5;
+  padding: 0 100px;
+  color: #a16ddc;
+  font-style: inherit;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+.para-2 {
+  text-align: justify;
+  margin-left: 0;
+  margin-right: 0;
+  line-height: 1.8;
+  font-size: 18px;
+  margin-top: -5px;
+  margin-bottom: 15px;
+  font-family: "Spectral", serif;
+  opacity: 0.8;
+}
+
+/*READ MORE BUTTON*/
+
+.read {
+  font-weight: bold;
+  text-align: center;
+  border-radius: 5px;
+  text-decoration: none;
+  margin-top: 45px;
+  margin-bottom: 20px;
+  display: inline-block;
+  padding: 12px 24px;
+  font-size: 16px;
+  color: #000000;
+  background-color: #c9b0e5;
+  transition: background-color 0.3s;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  cursor: pointer;
+}
+
+.read:hover {
+  background-color: #5b80b3;
+}
+
+/* 3.BOOKS PAGE*/
+
+/* Gradient background only for the header section */
+.book-page-header {
+  background: linear-gradient(to bottom right, #1e2022 42%, #5b80b3 100%);
+  color: white;
+  padding: 60px;
+  margin-bottom: 10px;
+  text-align: center;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+.stephen-books {
+  padding: 35px 118px;
+  margin-top: 100px;
+  margin-bottom: 50px;
+  text-align: center;
+  font-size: 17px;
+  line-height: 1.8;
+  opacity: 0.8;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+#book-page {
+  background-color: white; /* Set remaining section's background to white */
+  padding: 10px;
+}
+
+.book-cover-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.book-cover-pages {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  padding: 20px;
+  flex-shrink: 0;
+  margin-top: -10px; /* Closer to the header */
+  margin-bottom: 100px; /* Add units (px) to create space at the bottom */
+}
+
+.book-cover-pages img {
+  width: 250px;
+  height: 400px;
+  object-fit: cover;
+  transition: opacity 0.5s;
+}
+
+.hidden {
+  display: none; /* Initially hide the images */
+}
+
+/* 4.ACHIEVEMENT PAGE*/
+
+.achievement-header {
+  background: linear-gradient(to bottom right, #1e2022 42%, #5b80b3 100%);
+  color: white;
+  padding: 60px;
+  margin-bottom: 0;
+  text-align: center;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+#nomenies-page {
+  background-color: white; /* Set remaining section's background to white */
+  padding: 10px;
+}
+
+.achievement-pictures {
+  display: flex;
+  justify-content: left;
+  gap: 30px;
+  padding: 20px;
+  margin-top: -10px;
+  margin-bottom: 100px;
+  margin-left: 90px;
+}
+
+.achievement-pictures img {
+  width: 400px;
+  height: 525px;
+}
+
+.text-holder {
+  margin-top: -30px;
+  padding: 20px;
+  background-color: white;
+  color: #333;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+.nominations,
+.runner-ups {
+  font-family: cursive;
+  color: #5b80b3;
+  font-style: italic;
+  margin-bottom: -10px; /*MOVE THE TEXT UP*/
+}
+
+.nomenies,
+.runner-awards {
+  font-size: 17px;
+  line-height: 1.5;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.list-of-nomenies,
+.list-of-awards {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.list-of-nomenies li,
+.list-of-awards li {
+  color: #333;
+  font-size: 17px;
+  margin-bottom: 5px;
+}
+
+.list-of-nomenies li::marker,
+.list-of-awards li::marker {
+  color: #a16ddc; /* Purple color for bullet points */
+}
+
+/* 4.DATA VISUALIZATION PAGE*/
+.visualization-header {
+  background: linear-gradient(to bottom right, #1e2022 42%, #5b80b3 100%);
+  color: white;
+  padding: 60px;
+  margin-bottom: 0;
+  text-align: center;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+#dataholder-page {
+  background-color: white; /* Set remaining section's background to white */
+  padding: 10px;
+  height: 100vh;
+}
+
+/* 5.CONTACTS PAGE*/
+
+.contacts-lastpage {
+  background: linear-gradient(to bottom right, #1e2022 42%, #5b80b3 100%);
+  height: 100vh;
+}
