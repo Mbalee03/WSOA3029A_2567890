@@ -6,6 +6,10 @@
     <title>Stephen King Books</title>
     <!-- Referencing the API and CSS -->
     <link rel="stylesheet" href="style.css" />
+    <!-- Include D3.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.8.4/d3.min.js"></script>
+    <script src="data-visualization.js" defer></script>
+    <!-- Load your script after D3 -->
   </head>
 
   <body>
@@ -26,7 +30,6 @@
               <!-- Home -->
               <li class="navbar-item">
                 <a href="#homepage" class="navbar-link" data-nav-link>Home</a>
-                <!-- Change href="#home" to href="#homepage" -->
               </li>
               <!-- About -->
               <li class="navbar-item">
@@ -101,18 +104,12 @@
 
           <p class="para-1">
             Stephen King, born in Portland, Maine in 1947, is one of the world’s
-            most famous horror
-            <br />
-            authors. He published his first novel, <i>Carrie,</i>
-            in 1974, launching his career. Known for
-            <br />
+            most famous horror authors. He published his first novel,
+            <i>Carrie,</i> in 1974, launching his career. Known for
             <i>The Shining</i> and <i>The Stand,</i>
-            King has written over 60 novels and hundreds of short stories.
-            <br />
-            He has received numerous awards, including the National Medal of
-            Arts. King currently lives
-            <br />
-            in Maine and Florida with his wife, Tabitha.
+            King has written over 60 novels and hundreds of short stories. He
+            has received numerous awards, including the National Medal of Arts.
+            King currently lives in Maine and Florida with his wife, Tabitha.
           </p>
 
           <h2 class="quote-2">
@@ -120,48 +117,39 @@
           </h2>
 
           <p class="para-2">
-            Stephen King’s first novel, Carrie, was published in 1974 and marked
-            the beginning of his
-            <br />
-            legendary writing career. Since then, he has written iconic titles
-            like The Shining, It, and
-            <br />
-            Misery. His works span genres such as horror, thriller, and fantasy,
-            often blending the
-            <br />
-            supernatural with real-life fears. King’s books have been adapted
-            into numerous films, TV series,
-            <br />
-            and even graphic novels, solidifying his place as a master of modern
-            fiction. With over 60 novels
-            <br />
-            and countless short stories, his storytelling continues to captivate
-            readers worldwide.
+            Stephen King’s first novel, <i>Carrie</i>, was published in 1974 and
+            marked the beginning of his legendary writing career. Since then, he
+            has written iconic titles like <i>The Shining</i>, <i>It</i>, and
+            <i>Misery</i>. His works span genres such as horror, thriller, and
+            fantasy, often blending the supernatural with real-life fears.
+            King’s books have been adapted into numerous films, TV series, and
+            even graphic novels, solidifying his place as a master of modern
+            fiction. With over 60 novels and countless short stories, his
+            storytelling continues to captivate readers worldwide.
           </p>
         </div>
       </section>
 
-      <!-- ABOUT THE DESIGN PROCESS -->
+      <!-- ABOUT THE DESIGN PROCESS BUTTON -->
       <section class="designProcess-page">
-        <!-- Read more section -->
         <p class="read-more">
-          <!--To read more about the design process, press the button or scroll down.-->
+          To read more about the design process, click the button below.
         </p>
         <section id="readmore-Btn">
-          <button class="read">Read More About Design Process</button>
-          <!-- Added button text -->
+          <button
+            class="read"
+            onclick="window.location.href='design-visuals.html';"
+          >
+            Read More About Design Process
+          </button>
+          <!-- Button to link to Design Visuals page -->
         </section>
       </section>
     </section>
 
-    <!--Design Visuals Page-->
-    <section class="design-visual-background"></section>
-
-    <!--Design Theory Page-->
-    <section class="design-theory-background"></section>
-
     <!-- 3. BOOKS PAGE -->
-    <section class="book-page-background">
+    <section class="book-page-background" id="books">
+      <!-- Add id here -->
       <!-- Header with Gradient Background -->
       <header class="book-page-header">
         <h1>Book Collection by Stephen King</h1>
@@ -185,43 +173,48 @@
       <!-- Book Cover Images Section with Scroll Buttons -->
       <div class="book-cover-container">
         <!-- Main Book Page Section -->
-
         <section id="book-page">
-          <!-- Content for your book page will go here -->
           <section class="book-cover-pages">
-            <img src="images/book 1.jpg" alt="Carrie Book" srcset="" />
-            <img src="images/book 2.jpg" alt="Selem Lots" srcset="" />
-            <img src="images/book 3.jpg" alt="" srcset="The Shining Book" />
-
-            <!--Hidden Books for scrolling-->
-            <img class="hidden" src="images/book 5.jpeg" alt="The Stand" />
-            <!-- Initially hidden -->
-            <img class="hidden" src="images/book 6.jpg" alt="The Long Walk" />
-            <!-- Initially hidden -->
-            <img class="hidden" src="images/book 7.jpg" alt="Dead Zonek" />
-            <!-- Initially hidden -->
+            <img class="animate" src="images/book 1.jpg" alt="Carrie Book" />
+            <img class="animate" src="images/book 2.jpg" alt="Selem Lots" />
+            <img class="animate" src="images/book 3.jpg" alt="" />
+            <img
+              class="hidden animate"
+              src="images/book 5.jpeg"
+              alt="The Stand"
+            />
+            <img
+              class="hidden animate"
+              src="images/book 6.jpg"
+              alt="The Long Walk"
+            />
+            <img
+              class="hidden animate"
+              src="images/book 7.jpg"
+              alt="Dead Zonek"
+            />
           </section>
         </section>
       </div>
     </section>
 
     <!-- 4. ACHIEVEMENT PAGE -->
-    <section class="achievement-background-page">
+    <section class="achievement-background-page" id="achievements">
+      <!-- Add id here -->
       <!-- Background Page-->
       <header class="achievement-header">
         <h1>Nominations and Awards Achieved</h1>
       </header>
 
-      <!-- Pictures of Achievements and Awards recieved -->
+      <!-- Pictures of Achievements and Awards received -->
       <div class="nomenies-images-container">
-        <!--Images Holder-->
-
+        <!-- Images Holder -->
         <section id="nomenies-page"></section>
-        <!--Page Color-->
+        <!-- Page Color -->
         <section class="achievement-pictures">
           <img src="images/oscars.jpg" alt="Awards" srcset="" />
 
-          <!--Write a short text-->
+          <!-- Write a short text -->
           <div class="text-holder">
             <h2 class="nominations">Nominations</h2>
             <p class="nomenies">
@@ -250,33 +243,25 @@
             </ul>
 
             <h2 class="runner-ups">Runner-Ups and Awards</h2>
-            <p class="runner-awards">
-              In addition to his nominations, Stephen King has been a runner-up
-              for several prestigious awards and has won numerous accolades
-              throughout his career. Some of his most notable awards and
-              runner-up recognitions include:
+            <p class="nomenies">
+              In addition to his nominations, King has also won several awards
+              for his work:
             </p>
-            <ul class="list-of-awards">
+            <ul class="list-of-nomenies">
               <li>
-                Bram Stoker Awards: Multiple wins for various works, including
-                Misery and It.
+                Bram Stoker Awards: Recipient of multiple awards for his horror
+                novels.
               </li>
               <li>
-                British Fantasy Society Awards: Recognized for The Shining and
-                Pet Sematary.
+                World Fantasy Award for Lifetime Achievement: Honoring his
+                career contributions.
               </li>
               <li>
-                Locus Awards: Won for The Green Mile and Different Seasons.
+                Medal for Distinguished Contribution to American Letters: An
+                honor for his literary impact.
               </li>
               <li>
-                Medal for Distinguished Contribution to American Letters:
-                Presented by the National Book Foundation in recognition of his
-                impact on American literature.
-              </li>
-              <li>Hugo Award for Best Novel: Nominated for The Stand.</li>
-              <li>
-                World Fantasy Award for Lifetime Achievement: Acknowledging his
-                overall contributions to the genre.
+                The O. Henry Award: Acknowledging excellence in short stories.
               </li>
             </ul>
           </div>
@@ -284,26 +269,70 @@
       </div>
     </section>
 
-    <!-- 4. DATA VISUALIZATION PAGE -->
-    <section class="data-visualization">
-      <header class="visualization-header">
-        <h1>Stephen King Data Visualization</h1>
-      </header>
+    <!-- 6. DATA VISUALIZATION PAGE -->
 
-      <div class="data-holder">
-        <h2>THIS IS WHERE I NEED TO FETCH API AND PUT DATA VISUALIZATION</h2>
+    <section class="data-viz-background">
+      <div class="data-header">
+        <h1 class="main-heading">Stephen King Data Visualization</h1>
+        <h2 class="second-heading">
+          Visual Representation of Stephen King Books (1974-1984)
+        </h2>
+        <p class="data-description">
+          Comparative visualization of the number of books and their pages.
+        </p>
+      </div>
+
+      <!-- Data Visualization Container -->
+      <div class="data-viz-container">
+        <!-- Left Section for Bar Graph -->
+        <div class="left-section">
+          <h2>Bar Graph of Books Released and Their Page Counts</h2>
+          <div id="bar-graph"></div>
+
+          <div id="legend" class="legend">
+            <div class="legend-item">
+              <div class="legend-color" style="background-color: #ff69b4"></div>
+              <span class="legend-label">Carrie</span>
+            </div>
+            <div class="legend-item">
+              <div class="legend-color" style="background-color: #4682b4"></div>
+              <span class="legend-label">Salem's Lot</span>
+            </div>
+            <div class="legend-item">
+              <div class="legend-color" style="background-color: #32cd32"></div>
+              <span class="legend-label">The Shining</span>
+            </div>
+            <div class="legend-item">
+              <div class="legend-color" style="background-color: #ffd700"></div>
+              <span class="legend-label">Firestarter</span>
+            </div>
+            <div class="legend-item">
+              <div class="legend-color" style="background-color: #ff4500"></div>
+              <span class="legend-label">Different Seasons</span>
+            </div>
+            <div class="legend-item">
+              <div class="legend-color" style="background-color: #8a2be2"></div>
+              <span class="legend-label">Pet Sematary</span>
+            </div>
+            <div class="legend-item">
+              <div class="legend-color" style="background-color: #ff6347"></div>
+              <span class="legend-label">The Talisman</span>
+            </div>
+
+            <!-- Add other legend items as needed -->
+          </div>
+        </div>
+
+        <!-- Right Section for Pie Chart -->
+        <div class="right-section">
+          <h2 class="pie-heading">
+            Pie Chart of Books Released and Their Page Counts
+          </h2>
+          <div id="pie-chart"></div>
+        </div>
       </div>
     </section>
 
-    <!-- 5. CONTACTS PAGE -->
-    <section class="contacts-lastpage"></section>
-    <!-- lastPage-Background Colour -->
-    <section id="contacts-page"></section>
-
-    <section id="dataholder-page"></section>
-    <!--Page Color-->
-
-    <!-- Referencing JavaScript -->
     <script type="module" src="app.js"></script>
   </body>
 </html>

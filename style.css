@@ -283,6 +283,7 @@ html {
 /* 3.BOOKS PAGE*/
 
 /* Gradient background only for the header section */
+
 .book-page-header {
   background: linear-gradient(to bottom right, #1e2022 42%, #5b80b3 100%);
   color: white;
@@ -410,7 +411,55 @@ html {
   color: #a16ddc; /* Purple color for bullet points */
 }
 
-/* 4.DATA VISUALIZATION PAGE*/
+/* Combined Data Visualization Page */
+.data-viz-background {
+  padding: 0;
+  margin: 0;
+}
+
+.data-header {
+  background: linear-gradient(to bottom right, #1e2022 42%, #5b80b3 100%);
+  color: white;
+  padding: 60px 20px;
+  margin: 0;
+  text-align: center;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.data-viz-container {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+}
+
+.left-section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: #f0f0f0;
+}
+
+.pie-heading {
+  margin-top: -10px;
+  margin-bottom: 10px;
+}
+
+.right-section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background: #c9b0e5;
+  color: white;
+}
+
 .visualization-header {
   background: linear-gradient(to bottom right, #1e2022 42%, #5b80b3 100%);
   color: white;
@@ -420,15 +469,156 @@ html {
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
 
-#dataholder-page {
-  background-color: white; /* Set remaining section's background to white */
-  padding: 10px;
-  height: 100vh;
+#bar-graph {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 500px; /* Ensure height to display all information */
+  width: 100%; /* Full width */
+  background-color: #f0f0f0; /* Match the left section background */
+  margin-top: 20px;
+  overflow: visible;
 }
 
-/* 5.CONTACTS PAGE*/
+.bar-container {
+  height: 500px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
 
-.contacts-lastpage {
+svg {
+  display: block;
+}
+
+#pie-chart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+  width: 400px; /* Fixed size */
+  margin-top: 20px;
+}
+
+.tooltip {
+  position: absolute;
+  text-align: center;
+  padding: 5px;
+  font-size: 12px;
+  color: white;
+  background: black;
+  border-radius: 5px;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+
+.legend {
+  display: flex;
+  flex-wrap: wrap; /* Allow wrapping for multiple legend items */
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  margin: 5px 10px;
+}
+
+.legend-color {
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+  border: 1px solid #000;
+}
+
+.legend-label {
+  font-size: 14px;
+  color: black;
+}
+
+/*design visual html*/
+
+.design-background {
+  color: white; /* Change text color for better contrast */
   background: linear-gradient(to bottom right, #1e2022 42%, #5b80b3 100%);
-  height: 100vh;
+  padding: 20px;
+}
+
+.design-image-container {
+  margin: 20px; /* Optional: Add margin for spacing */
+}
+
+.images-of-wireframes {
+  display: flex; /* Use flexbox for layout */
+  flex-wrap: wrap; /* Allow wrapping to the next line */
+  justify-content: center; /* Center the images horizontally */
+}
+
+.images-of-wireframes img {
+  width: calc(25% - 20px);
+  margin: 10px;
+  height: auto;
+  max-width: 100%;
+}
+
+.mid {
+  background: #c9b0e5;
+  color: black;
+  padding: 20px;
+  margin: 20px 0;
+  text-align: center;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  border-radius: 5px;
+}
+
+.high {
+  background: #c9b0e5;
+  color: black;
+  padding: 20px;
+  margin: 20px 0;
+  text-align: center;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  border-radius: 5px;
+}
+
+.styleguide {
+  background: #c9b0e5;
+  color: black;
+  padding: 20px;
+  margin: 20px 0;
+  text-align: center;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  border-radius: 5px;
+}
+
+.theory-section {
+  color: white;
+  background: linear-gradient(to bottom right, #1e2022 42%, #5b80b3 100%);
+
+  padding: 20px;
+}
+
+.theory-section {
+  padding: 20px;
+}
+
+.design-theory-background {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.mid {
+  margin-top: 30px;
+}
+
+.essay-writting {
+  font-size: 17px;
+  color: white;
+  text-align: center;
+  line-height: 1.5;
+  margin: 20px;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.7);
 }
