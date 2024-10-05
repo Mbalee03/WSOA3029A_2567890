@@ -620,5 +620,6 @@ svg {
   line-height: 1.5;
   margin: 20px;
   padding: 20px;
+  /*changes*/
   background-color: rgba(0, 0, 0, 0.7);
 }
